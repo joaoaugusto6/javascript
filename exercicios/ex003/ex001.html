@@ -17,15 +17,19 @@
     <h1>Iniciando estudos com o DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div>clique em mim!</div>
+    <div class="smg">clique em mim!</div>
 
     <script>
-        var corpo = document.body
+        var corpo = window.document.body
         var p1 = document.getElementsByTagName('p')[1]
+        /*
         var d = document.getElementsByTagName('div')
-
-        p1.style.backgroundColor = 'red'
-        p1.style.color = 'white'
+        d.style.backgroundColor = 'green'
+        d.innerText = 'Estou aguardando...'
+        */
+        
+        var d = window.document.querySelector('div.smg')
+        d.style.backgroundColor = 'blue'
     </script>
 
 </body>
