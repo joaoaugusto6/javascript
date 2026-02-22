@@ -49,12 +49,12 @@
 
     <script>
 
-        alert('Digite o nome do país com a primeira letra em maiúscula para obter o resultado correto por favor.');
+        alert('Digite o nome do país com a primeira letra em maiúscula para obter o resultado correto por favor.'); 
 
         function verificarNacionalidade() {
             var pais = document.getElementById('pais');
             var resultado = document.getElementById('resultado');
-            if (pais.value.toLowerCase() === 'brasil') {
+            if (pais.value === 'Brasil') {
                 resultado.innerHTML = 'brasileiro';
             }
             else {
