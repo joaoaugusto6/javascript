@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            font:normal 20pt arial;
+            background-image: linear-gradient(45deg, #b7fffb, #cccccc);
+            height: 90vh;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-top: 50px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: 0px solid #ccc;
+            border-radius: 8px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #009999;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: color 0.5s, background-color 0.5s;
+        }
+        button:hover {
+            background-color: #00bac7;
+        }
+        p {
+            margin-top: 20px;
+            font-size: 18pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p>Por favor digite o seu país de origem:</p><input type="text" id="pais">
+    <button onclick="verificarNacionalidade()">Verificar</button>
+    <p id="resultado"></p>  
+
+    <script>
+
+        alert('Digite o nome do país com a primeira letra em maiúscula para obter o resultado correto por favor.');
+
+        function verificarNacionalidade() {
+            var pais = document.getElementById('pais');
+            var resultado = document.getElementById('resultado');
+            if (pais.value.toLowerCase() === 'brasil') {
+                resultado.innerHTML = 'brasileiro';
+            }
+            else {
+                resultado.innerHTML = 'Estrangeiro';
+            }
+        }
+    </script>
+</body>
+</html>
