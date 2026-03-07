@@ -8,17 +8,35 @@
 </head>
 <body>
     <header>
-
+        <h1>Detectador de Idade</h1>
     </header>
-    <div>
 
-    </div>
-    <div>
+    <section>
+        <div>
+            <p>
+                Ano de Nascimento:
+                <input type="number" name="idade" id="idade" required>
+            </p>
 
-    </div>
+            <p>Qual seu sexo:
+                <input type="radio" name="sex" id="raH" checked>
+                <label for="raH">Masculino</label>
+                
+                <input type="radio" name="sex" id="raM">
+                <label for="raM">Feminino</label>
+            </p>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+
+        <div id="res">
+            <p>Preencha os dados e veja o resultado</p>
+        </div>
+    </section>
+
     <footer>
-
+        <p>CursoEmVideo</p>
     </footer>
+
     <script src="script/script.js"></script>
 </body>
 </html>

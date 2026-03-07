@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(83, 192, 255);
+    font: 400 1.2em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
