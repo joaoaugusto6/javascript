@@ -1,22 +1,35 @@
 @charset "UTF-8";
 
 body {
-    background-color: rgb(83, 192, 255);
-    font: 400 1.2em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 5px;
+    background-color: #69dbdf;
 }
 
-header {
-    color: white;
+h1 {
     text-align: center;
-    padding: 5px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
 }
 
 section {
     background-color: white;
-    border-radius: 8px;
-    padding: 5px;
-    width: 500px;
+    border-radius: 10px;
+    border: 1px solid black;
     margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#foto {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px black;
 }
