@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+
+        body {
+            background-color: rgb(1, 191, 255);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.6em;
+            font-family: monospace;
+        }
+
+        section {
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        tabuada
+    </h1>
+
+    <section>
+
+        <div>
+            <p>
+                Número: <input type="number" name="n" id="n">
+                <input type="button" value="Gerar Tabuada" onclick="tabuada()">
+            </p>
+        </div>
+
+        <div>
+            <select name="tabuada" id="tab" size="10"></select>
+        </div>
+
+    </section>
+    
+    <footer>
+        <p> &copy; CursoemVídeo</p>
+    </footer>
+    
+    <script>
+        function tabuada() {
+            var n = document.getElementById('n')
+            var tab = document.getElementById('tab')
+
+            tab.innerHTML = ''
+            
+            if (n.value.length == 0) {
+                alert('Por favor, digite um número!')
+            }
+            else {
+                var n = Number(n.value)
+                var c = 1
+                while (c <= 10) {
+                    var item = document.createElement('option')
+                    item.text = `${n} x ${c} = ${n*c}`
+                    tab.appendChild(item)
+                    c++ 
+                }
+            }
+        }
+    </script>
+</body>
+</html>
