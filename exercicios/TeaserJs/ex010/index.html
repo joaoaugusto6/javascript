@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador de Números</title>
+    <style>
+        body {
+            background-color: rgb(1, 191, 255);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.6em;
+            font-family: monospace;
+        }
+
+        section {
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Analizador de Números</h1>
+    </header>
+    <section>
+        <div>
+            Digite um número entre (1 e 100):
+            <input type="number" name="num" id="fnum">
+            <input type="button" value="adicionar" onclick="adicionar()">
+            <br><br><select name="lista" id="flista" size="6"></select>
+            <br><br>
+            <input type="button" value="finalizar" onclick="finalizar()">
+        </div>
+        <div id="res">
+
+        </div>
+    </section>
+    <footer>
+        <p>Criado por João Augusto</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
