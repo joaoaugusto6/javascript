@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios com Number</title>
+    <style>
+        body {
+            background-color: rgb(255, 136, 0);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        main {
+            background-color: white;
+            color: rgb(24, 24, 24);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 7px;
+        }
+        
+        h1 {
+            color: coral;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Exercício com Numero</h1>
+        <div id="res">
+        </div>
+        <script>
+            let n = Number(prompt('Digite um número: '))
+            const re = document.getElementById('res')
+            res.innerHTML = `<h1>Seu número é: ${n}</h1><br>`
+            res.innerHTML += `<p>Raiz quadrada: ${n ** 0.5}</p><br>`
+            res.innerHTML += `<p>${n} é inteiro: ${Number.isInteger(n)}</p><br>`
+            res.innerHTML += `<p>${n} é NaN: ${Number.isNaN(n)}</p> <br>`
+            res.innerHTML += `<p>Arrendondando pra baixo: ${Math.floor(n)}</p><br>`
+            res.innerHTML += `<p>Arrendondando pra cima: ${Math.ceil(n)}</p><br>`
+            res.innerHTML += `<p>Com duas casas decimais: ${n.toFixed(2)}</p><br>`
+        </script>
+    </main>
+</body>
+</html>
