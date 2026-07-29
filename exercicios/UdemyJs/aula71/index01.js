@@ -32,5 +32,3 @@ console.log(Object.keys(p1)); // mostra as chaves do objeto
 for (let chave in p1) {
   console.log(chave);
 }
-
-
