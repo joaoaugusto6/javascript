@@ -1,0 +1,3 @@
+function vericar() {
+    alert('testando')
+}
